@@ -11,15 +11,15 @@
 
 `!!ss` 显示帮助信息
 
-`!!ss switch [<slot>]` 切换为槽位 `<slot>` 的服务器。
+`!!ss switch 或 !!ss s [<slot>]` 切换为槽位 `<slot>` 的服务器。
 
-`!!ss rename <slot> <comment>` 修改槽位 `<slot>` 的注释，即重命名这一槽位
+`!!ss rename 或 !!ss r <slot> <comment>` 修改槽位 `<slot>` 的注释，即重命名这一槽位
 
-`!!ss confirm` 在执行 `switch` 后使用，再次确认是否进行切换
+`!!ss confirm 或 !!ss c` 在执行 `switch` 后使用，再次确认是否进行切换
 
-`!!ss abort` 在任何时候键入此指令可中断操作
+`!!ss abort 或 !!ss a` 在任何时候键入此指令可中断操作
 
-`!!ss list` 显示各槽位的服务器信息
+`!!ss list 或 !!ss l` 显示各槽位的服务器信息
 
 `!!ss reload` 重新加载配置文件
 
