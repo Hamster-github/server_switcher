@@ -8,11 +8,16 @@ class Configuration(Serializable):
 	servers_path: str = './server_switcher'
 	server_path: str = './server'
 	minimum_permission_level: Dict[str, int] = {
+		'switch': 2,
+		'rename': 2,
+		'confirm': 1,
+		'abort': 1,
+		'reload': 2,
+		'list': 0,
 		's': 2,
 		'r': 2,
 		'c': 1,
 		'a': 1,
-		'reload': 2,
 		'l': 0,
 	}
 
