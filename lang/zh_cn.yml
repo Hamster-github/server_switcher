@@ -1,0 +1,66 @@
+server_switcher:
+  help_message: |
+    ------ {1} v{2} ------
+    一个支持多槽位的快速§a服务器§r§c切换§r插件
+    §d【格式说明】§r
+    §7{0}§r 显示帮助信息
+    §7{0} switch §6[<slot>]§r §c切换至§r为槽位§6<slot>§r的服务器。默认为槽位§61§r
+    §7{0} rename §6<slot>§r §e<cmt>§r §b修改§r槽位§6<slot>§r的注释，即重命名这一槽位
+    §7{0} confirm§r 再次确认是否进行§c切换§r
+    §7{0} abort§r 在任何时候键入此指令可中断§c切换§r
+    §7{0} list§r 显示各槽位的服务器信息
+    §7{0} reload§r 重新加载配置文件
+    当§6<slot>§r未被指定时默认选择槽位§61§r
+
+  second: "{0}秒"
+  minute: "{0}分钟"
+  hour: "{0}小时"
+  day: "{0}天"
+  slot_info: "日期: {0}; 注释: {1}"
+  empty_comment: §7空§r
+  unknown_slot: 槽位输入错误，应输入一个位于[{0}, {1}]的数字
+  empty_slot: 槽位输入错误，槽位§6{0}§r为空
+
+  lock.warning: 正在{0}中，请等待操作执行完成
+  operations:
+    switch: §c切换§r
+    rename: §9重命名§r
+
+  rename_server:
+    success: 重命名槽位§6{0}§r§a完成§r
+    fail: "重命名槽位§6{0}§r§4失败§r，错误代码: {1}"
+
+  switch_server:
+    echo_action: 准备将服务器切换至槽位§6{0}§r，{1}
+    confirm_hint: 使用§7{0} confirm§r 确认§c切换§r
+    confirm_hover: 点击确认
+    abort_hint: §7{0} abort§r 取消
+    abort_hover: 点击取消
+    warn_overwrite: §7检测到可能的文件覆盖风险，请重命名 §adefault_server
+
+  confirm_switch.nothing_to_confirm: 没有什么需要确认的
+
+  do_switch:
+    countdown.intro: 10秒后关闭服务器§c切换§r
+    countdown.text: 还有{0}秒，将§c切换§r为槽位§6{1}§r，{2}
+    countdown.hover: 点击终止切换！
+    abort: §c切换§r被中断！
+
+  trigger_abort.abort: 终止操作！
+
+  list_server:
+    title: §d【槽位信息】§r
+    slot:
+      header: "[槽位§6{0}§r]"
+      switch: 点击切换至槽位§6{0}§r
+    total_space: "服务器总占用空间: §a{0}§r"
+
+  unknown_command:
+    text: 参数错误！请输入§7{0}§r以获取插件信息
+    hover: 点击查看帮助
+  command:
+    permission_denied: 权限不足
+    wrong_slot: 槽位输入错误
+  register:
+    summory_help: §a切换§r，§6{0}§r槽位
+    show_help: 点击查看帮助信息

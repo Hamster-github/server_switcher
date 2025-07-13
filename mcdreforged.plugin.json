@@ -1,0 +1,22 @@
+{
+	"id": "server_switcher",
+	"version": "1.0.0",
+	"name": "Server Switcher",
+	"description": {
+		"en_us": "A plugin for quickly switching server versions in creative server",
+		"zh_cn": "用于快速切换服务端实现创造服多版本切换"
+	},
+	"author": [
+		"meng_877"
+	],
+	"link": "",
+	"dependencies": {
+		"mcdreforged": ">=2.1.2"
+	},
+
+	"archive_name": "ServerSwitcher-v{version}",
+	"resources": [
+		"lang",
+		"LICENSE"
+	]
+}
